@@ -1,0 +1,155 @@
+/* Add this CSS to your existing styles or create a new CSS file */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  .background-video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw; /* Adjust the width of the video container */
+    height: 100vh;
+    object-fit: cover;
+    z-index:-1; /* Place the video behind other content */
+   opacity:0.8;
+}
+  header {
+    position: relative;
+    top: 0;
+    left: 120vh;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+.navbar a{
+    font-family:'Times New Roman', Times, serif;
+  }
+  .navbar a{
+    font-size: 18px;
+    color: #feffff;
+    text-decoration: none;
+    text-decoration: 500;
+    margin-left: 35px;
+}
+.navbar a:hover,
+.navbar a.active
+{
+    color: #00abf0;
+}
+
+
+
+
+/* #### SKILLS PAGE #### */
+.skills{
+    padding: 5rem 0 2.5rem 0;
+}
+.skills > .text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+.skills .row{
+    margin: 1rem 0;
+}
+.skills .item{
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+.skills .item-text {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+    text-shadow: none; /* Add this line to remove the text shadow */
+}
+
+.skills .item-text span:last-child {
+    position: absolute;
+}
+
+.skills .item-text .w-90 {
+    margin-left: 85%;
+}
+
+.skills .item-text .w-75 {
+    margin-left: 70%;
+}
+
+.skills .item-text .w-85 {
+    margin-left: 80%;
+}
+
+.skills .item-text .w-80 {
+    margin-left: 75%;
+}
+
+.skills .item-text .w-60 {
+    margin-left: 55%;
+}
+
+.skills .item-text .w-68 {
+    margin-left: 63%;
+}
+
+.progress{
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: var(--nero);
+    overflow: hidden;
+}
+.progress-bar{
+    background: var(--green);
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.progress-bar.w-90{
+    width: 90%;
+}
+.progress-bar.w-75{
+    width: 75%;
+}
+.progress-bar.w-85{
+    width: 85%;
+}
+.progress-bar.w-80{
+    width: 80%;
+}
+.progress-bar.w-60{
+    width: 60%;
+}
+.progress-bar.w-68{
+    width: 68%;
+}
+
+
+
+
+
+
+/* #### Media Queries #### */
+@media screen and (min-width: 500px){
+   
+
+    /* skills page */
+    .skills .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+    
+
+
+    
+
+    

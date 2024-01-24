@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'POPPINS',sans-serif;
+}
+body{
+    background-color: #001b29;
+    color: #ededed;
+}
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.myimage{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 500px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
+    border-radius: 0px; /* Optional: Add rounded corners */
+}
+.intro{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+@import url('https://fonts.cdnfonts.com/css/warlock');
+.logo  h1 {
+    font-size: 8vh;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Warlock',sans-serif;
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #0056b3;
+    text-decoration: none;
+    text-decoration: 500;
+    margin-left: 35px;
+}
+.navbar a:hover,
+.navbar a.active
+{
+    color: #00abf0;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw; /* Adjust the width of the video container */
+    height: 100vh;
+    object-fit: cover;
+    z-index:-1; /* Place the video behind other content */
+   opacity:0.8;
+}
+.ps{
+    color: #ff4400;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.home-content{
+    background-color: transparent;
+    max-width:600px;
+    flex: 1;
+}
+.home-content h1{
+    font-size:56px;
+    font-weight:700 ;
+
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content p {
+    font-size: 16px;
+    font-style:initial;
+    position: relative;
+    top: 20px;
+}
+.home-content .btn-box{
+    justify-content: space-between;   
+    width: 345px;
+    height: 50;
+    background: transparent;
+}
+.btn-box a { 
+    position: relative;
+    top: 40px;
+    display: inline-flex;
+    justify-content: center;
+width: 140px;
+height: 100%;
+background: #00abf0;
+border: 2px solid #00abf0;
+border-radius: 8px;
+font-size: 19px;
+color: #001b29;
+text-decoration: none;
+font-weight: 600;
+letter-spacing: 2px;
+z-index: 1;
+overflow:hidden;
+
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2)::before {
+    background: #00abf0;
+    color:transparent;
+}
+.btn-box a:nth-child(2):hover {
+    color: #001b29;
+}
+.btn-box a::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height: 100%;
+    background:#001b29;
+    z-index: -1;
+    transition: .5s;
+
+}
+.btn-box a:hover{
+    color: #00abf0;
+}
+.btn-box a:hover::before {
+    width: 100%;
+}
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index:1;
+   transition: .5s;
+   overflow: hidden;
+}
+.home-sci a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 00%;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover{
+    color: #001b29;
+}
+.home-sci a:hover::before{
+    background-color: #00abf0;
+    width: 100%;
+}
+/* CAREER PAGE*/
+/* Add these styles to improve the display of diplomas */
+body {
+    font-family: 'POPPINS', sans-serif;
+    background-color: #001b29;
+    color: #ededed;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    text-decoration: 500;
+    margin-left: 35px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.diplomas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    
+}
+
+.title {
+    width: 50%;
+    position: relative;
+    bottom: 50px;
+}
+
+.title h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.round {
+    height: 10%;
+    width: 5px;
+    background-color: #ff4400;
+    border-radius: 10px;
+    margin-right: 20px; /* Adjust the spacing between title and round */
+}
+/* Your existing styles here */
+
+/* Adjustments for .bac class */
+/* Your existing styles here */
+
+/* Improved styling for .bac class */
+.bac {
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 5px solid #00abf0; /* Add a subtle border for separation */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+/* Improved styling for .prepa class */
+.prepa {
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 5px solid #00abf0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the article image */
+.img_article {
+    margin-bottom: 20px;
+    border-radius: 5px; /* Round the corners of the image */
+}
+
+/* Styling for the article headings */
+article h1 {
+    font-size: 1.8em; /* Increase the font size for headings */
+    margin-bottom: 10px;
+}
+
+/* Styling for the article paragraphs */
+article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Styling for the "plus" link */
+article a {
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article hr {
+    border: 1px solid #ddd;
+    margin-top: 30px;
+}
+
+/* Rest of your styles here */
+
+
+.skills-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.skills-title {
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 50px;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    width: 300px;
+    margin: 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+opacity: 0.6;
+}
+
+.skill:hover {
+    background-color: #0056b3;
+    opacity: 1;
+}
+
+.skill h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.skill p {
+    margin: 0;
+    font-size: 16px;
+}
+/* QUIZZ PAGE*/
+.q1, .q2, .q3, .q4, .q5 {
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 50vh;
+}
+
+.q1 p, .q2 p, .q3 p, .q4 p, .q5 p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.q1 input, .q2 input, .q3 input, .q4 input, .q5 input {
+    margin-bottom: 10px;
+
+}
+/* Optional: Add hover effect */
+.q1:hover, .q2:hover, .q3:hover, .q4:hover, .q5:hover {
+    transform: scale(1.07);
+    transition: transform 0.4s ease-in-out;
+}
+/* ### Career page */
+.img_article{
+    width:20vh;
+    border: 10px;
+
+}
